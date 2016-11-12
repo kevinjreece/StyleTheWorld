@@ -12,29 +12,20 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 
     @IBOutlet var imageView: UIImageView!
     
-    var imagePicker: UIImagePickerController!
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        imagePicker.dismiss(animated: true, completion: nil)
-        let tempImage: UIImage = (info[UIImagePickerControllerOriginalImage] as? UIImage)!
-        imageView.image = tempImage
-    }
+    var cameraEngine: CameraEngine!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
-            imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
-            imagePicker.allowsEditing = false
-        }
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        self.present(imagePicker, animated: true, completion: nil)
+        _ = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(ViewController.captureImage), userInfo: nil, repeats: true)
+        cameraEngine = CameraEngine()
+        cameraEngine.startSession()
     }
     
+    func captureImage() {
+        self.cameraEngine.capturePhoto { (image: UIImage?, error: Error?) -> (Void) in
+            self.imageView.image = image
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -14,6 +14,15 @@
 		2893DC131DD714EF003C23E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2893DC111DD714EF003C23E0 /* LaunchScreen.storyboard */; };
 		2893DC1E1DD714EF003C23E0 /* StyleTheWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893DC1D1DD714EF003C23E0 /* StyleTheWorldTests.swift */; };
 		2893DC291DD714EF003C23E0 /* StyleTheWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893DC281DD714EF003C23E0 /* StyleTheWorldUITests.swift */; };
+		2893DC8E1DD77127003C23E0 /* CameraEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893DC851DD77127003C23E0 /* CameraEngine.swift */; };
+		2893DC8F1DD77127003C23E0 /* CameraEngineCaptureOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893DC861DD77127003C23E0 /* CameraEngineCaptureOutput.swift */; };
+		2893DC901DD77127003C23E0 /* CameraEngineDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893DC871DD77127003C23E0 /* CameraEngineDevice.swift */; };
+		2893DC911DD77127003C23E0 /* CameraEngineDeviceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893DC881DD77127003C23E0 /* CameraEngineDeviceInput.swift */; };
+		2893DC921DD77127003C23E0 /* CameraEngineFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893DC891DD77127003C23E0 /* CameraEngineFileManager.swift */; };
+		2893DC931DD77127003C23E0 /* CameraEngineGifEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893DC8A1DD77127003C23E0 /* CameraEngineGifEncoder.swift */; };
+		2893DC941DD77127003C23E0 /* CameraEngineMetadataOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893DC8B1DD77127003C23E0 /* CameraEngineMetadataOutput.swift */; };
+		2893DC951DD77127003C23E0 /* CameraEngineVideoEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893DC8C1DD77127003C23E0 /* CameraEngineVideoEncoder.swift */; };
+		2893DC961DD77127003C23E0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2893DC8D1DD77127003C23E0 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,16 @@
 		2893DC241DD714EF003C23E0 /* StyleTheWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StyleTheWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2893DC281DD714EF003C23E0 /* StyleTheWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTheWorldUITests.swift; sourceTree = "<group>"; };
 		2893DC2A1DD714EF003C23E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2893DC841DD77127003C23E0 /* CameraEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraEngine.h; path = CameraEngine/CameraEngine.h; sourceTree = "<group>"; };
+		2893DC851DD77127003C23E0 /* CameraEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraEngine.swift; path = CameraEngine/CameraEngine.swift; sourceTree = "<group>"; };
+		2893DC861DD77127003C23E0 /* CameraEngineCaptureOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraEngineCaptureOutput.swift; path = CameraEngine/CameraEngineCaptureOutput.swift; sourceTree = "<group>"; };
+		2893DC871DD77127003C23E0 /* CameraEngineDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraEngineDevice.swift; path = CameraEngine/CameraEngineDevice.swift; sourceTree = "<group>"; };
+		2893DC881DD77127003C23E0 /* CameraEngineDeviceInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraEngineDeviceInput.swift; path = CameraEngine/CameraEngineDeviceInput.swift; sourceTree = "<group>"; };
+		2893DC891DD77127003C23E0 /* CameraEngineFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraEngineFileManager.swift; path = CameraEngine/CameraEngineFileManager.swift; sourceTree = "<group>"; };
+		2893DC8A1DD77127003C23E0 /* CameraEngineGifEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraEngineGifEncoder.swift; path = CameraEngine/CameraEngineGifEncoder.swift; sourceTree = "<group>"; };
+		2893DC8B1DD77127003C23E0 /* CameraEngineMetadataOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraEngineMetadataOutput.swift; path = CameraEngine/CameraEngineMetadataOutput.swift; sourceTree = "<group>"; };
+		2893DC8C1DD77127003C23E0 /* CameraEngineVideoEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraEngineVideoEncoder.swift; path = CameraEngine/CameraEngineVideoEncoder.swift; sourceTree = "<group>"; };
+		2893DC8D1DD77127003C23E0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CameraEngine/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +116,7 @@
 		2893DC071DD714EF003C23E0 /* StyleTheWorld */ = {
 			isa = PBXGroup;
 			children = (
+				2893DC721DD76F16003C23E0 /* CameraEngine */,
 				2893DC081DD714EF003C23E0 /* AppDelegate.swift */,
 				2893DC0A1DD714EF003C23E0 /* ViewController.swift */,
 				2893DC0C1DD714EF003C23E0 /* Main.storyboard */,
@@ -123,6 +143,23 @@
 				2893DC2A1DD714EF003C23E0 /* Info.plist */,
 			);
 			path = StyleTheWorldUITests;
+			sourceTree = "<group>";
+		};
+		2893DC721DD76F16003C23E0 /* CameraEngine */ = {
+			isa = PBXGroup;
+			children = (
+				2893DC841DD77127003C23E0 /* CameraEngine.h */,
+				2893DC851DD77127003C23E0 /* CameraEngine.swift */,
+				2893DC861DD77127003C23E0 /* CameraEngineCaptureOutput.swift */,
+				2893DC871DD77127003C23E0 /* CameraEngineDevice.swift */,
+				2893DC881DD77127003C23E0 /* CameraEngineDeviceInput.swift */,
+				2893DC891DD77127003C23E0 /* CameraEngineFileManager.swift */,
+				2893DC8A1DD77127003C23E0 /* CameraEngineGifEncoder.swift */,
+				2893DC8B1DD77127003C23E0 /* CameraEngineMetadataOutput.swift */,
+				2893DC8C1DD77127003C23E0 /* CameraEngineVideoEncoder.swift */,
+				2893DC8D1DD77127003C23E0 /* Info.plist */,
+			);
+			name = CameraEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2893DC961DD77127003C23E0 /* Info.plist in Resources */,
 				2893DC131DD714EF003C23E0 /* LaunchScreen.storyboard in Resources */,
 				2893DC101DD714EF003C23E0 /* Assets.xcassets in Resources */,
 				2893DC0E1DD714EF003C23E0 /* Main.storyboard in Resources */,
@@ -263,7 +301,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2893DC0B1DD714EF003C23E0 /* ViewController.swift in Sources */,
+				2893DC911DD77127003C23E0 /* CameraEngineDeviceInput.swift in Sources */,
 				2893DC091DD714EF003C23E0 /* AppDelegate.swift in Sources */,
+				2893DC901DD77127003C23E0 /* CameraEngineDevice.swift in Sources */,
+				2893DC931DD77127003C23E0 /* CameraEngineGifEncoder.swift in Sources */,
+				2893DC951DD77127003C23E0 /* CameraEngineVideoEncoder.swift in Sources */,
+				2893DC8F1DD77127003C23E0 /* CameraEngineCaptureOutput.swift in Sources */,
+				2893DC941DD77127003C23E0 /* CameraEngineMetadataOutput.swift in Sources */,
+				2893DC921DD77127003C23E0 /* CameraEngineFileManager.swift in Sources */,
+				2893DC8E1DD77127003C23E0 /* CameraEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +574,7 @@
 				2893DC2F1DD714EF003C23E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2893DC301DD714EF003C23E0 /* Build configuration list for PBXNativeTarget "StyleTheWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +583,7 @@
 				2893DC321DD714EF003C23E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2893DC331DD714EF003C23E0 /* Build configuration list for PBXNativeTarget "StyleTheWorldUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +592,7 @@
 				2893DC351DD714EF003C23E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
